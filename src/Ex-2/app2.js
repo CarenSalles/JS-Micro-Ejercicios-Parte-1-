@@ -15,9 +15,10 @@ const respuesta = `La suma de ${numero1} + ${numero2} es ${resultado}`;
 const contenedor = document.getElementById('resultado-suma');
 
 console.log(respuesta)
+document.write(respuesta)
 
-function insertarresultadosuma(){
-    contenedor.innerHTML = resultado-suma;
+// function insertarresultadosuma(){
+//     contenedor.innerHTML = resultado-suma;
 
-}
-insertarrespuesta();
+// }
+// insertarrespuesta();
