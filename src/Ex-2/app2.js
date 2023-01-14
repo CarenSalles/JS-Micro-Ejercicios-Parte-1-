@@ -17,8 +17,4 @@ const contenedor = document.getElementById('resultado-suma');
 console.log(respuesta)
 document.write(respuesta)
 
-// function insertarresultadosuma(){
-//     contenedor.innerHTML = resultado-suma;
-
-// }
-// insertarrespuesta();
+contenedor.innerHTML= respuesta;
