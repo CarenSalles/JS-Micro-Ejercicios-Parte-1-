@@ -11,14 +11,18 @@
     <header>Ejercício JavaScript-5</header><br><br>
     <div class="button1"> 
         <label for="number">Numero 1:</label>
-        <input type="number" name="number1" id="number1" placeholder="Digite un numero">
-        <button type="button" onclick = "capture()" name="Submit" id="Submit">Submit</button>
+        <input type="number" name="number1" id="number1input" placeholder="Digite un numero">
+        <button type="button" onclick = "submitNumbOne()" name="Submit" id="Submit">Submit</button>
     </div><br><br>
     <div>
         <label for="number">Numero 2:</label>
-        <input type="number" name="number1" id="number2" placeholder="Digite un numero">
-        <button type="button" onclick = "capture()" name="Submit" id="Submit">Submit</button>
-    </div>
+        <input type="number" name="number1" id="number2input" placeholder="Digite un numero">
+        <button type="button" onclick = "submitNumbTwo()" name="Submit" id="Submit">Submit</button>
+    </div><br><br>
+
+    <button type="button" onclick = "compareNumbers()" name="Submit">Compare numbers</button>
+
+    <h2 id="results"></h2>
     
     <script src="./app5.js"></script>
 </body>

@@ -5,26 +5,53 @@
 // Creamos una función que determina cual el numero mayor y que imprima en pantalla.//
 
 
-// function capture() {
-
-//     const number1 = document.getElementById("number1").value;
-//     const number2 = document.getElementById("number2").value;
-//     console.log = ("Lo numero mayor es " + comparation);
-// }
-    
-const number1 = prompt("Escriba un número");
-const number2 = prompt("Escriba otro número");
-
-
-function comparation() {
-
-    if (number1 > number2) {
-        console.log(number1);
-    
-    } else {
-        console.log(number2);
-    }
+function submitNumbOne() {
+    let number1 = document.getElementById("number1input").value;
+    // console.log("número 1: ", number1);
+    // console.log = ("Lo numero mayor es " + comparation);
 }
+
+function submitNumbTwo() {
+    let number2 = document.getElementById("number2input").value;
+    // console.log("número 2: ", number2);
+    // console.log = ("Lo numero mayor es " + comparation);
+}
+
+function compareNumbers() {
+    // pasar el valor de number1 y number2 para compararlos
+    let number1 = document.getElementById("number1input").value;
+    let number2 = document.getElementById("number2input").value;
+
+        if(number1 > number2) {
+            console.log("El número 1 es mayor que el número 2");
+        } else {
+            console.log("El número 2 es mayor que el número 1");
+
+        }
+
+ 
+    // if (this.number1 > this.number2) {
+    //     console.log("El número es mayor", this.number1);
+    
+    // } else {
+    //     console.log(number2);
+    // }
+}
+
+    
+// const number1 = prompt("Escriba un número");
+// const number2 = prompt("Escriba otro número");
+
+
+// function comparation() {
+
+//     if (number1 > number2) {
+//         console.log(number1);
+    
+//     } else {
+//         console.log(number2);
+//     }
+// }
 
 
 

@@ -11,17 +11,14 @@ let characternumber = phrase.length; //Devuelve la longitud del string.
 
 phrase = phrase.toUpperCase(); //Devuelve el string en mayúsculas.
 
-let car;
-let count = 0;
+
 let i;     
 
-for (let i= 0 ; i <characternumber; i++) {
-   car = phrase.charAt(i); //recupera el caracter i del string.
-
-   if ((car == "A") || (car == "E") || (car == "I") || (car == "O") || (car == "U")) {
-    
-    count ++;
+for ( i= 0 ; i <characternumber; i++) {
+  
+   if (phrase.substring (i, 1) === "A" || phrase.substring (i, 1)== "E" || phrase.substring(i, 1) === "I" || phrase.substring(i, 1) === "O" || phrase.substring (i, 1) === "U" ) {
+    //substring() es un método para extraer una subcadena de texto de una cadena más grande, dadas las posiciones inicial y final dentro de la cadena.
+    //recupera el caracter i del string.
+    document.write( "Número de Vocales:" + phrase.substring(0, i) + ".");
    }
-
-    document.write( "Número de Vocales:" + count + ".");
 }

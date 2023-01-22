@@ -17,6 +17,6 @@ const respuesta = `La suma de ${numero1} + ${numero2} es ${resultado}.`;
 const contenedor = document.getElementById('resultado-suma');
 
 console.log(respuesta);
-document.write(respuesta);
+// document.write(respuesta);
 contenedor.innerHTML = respuesta;
 
