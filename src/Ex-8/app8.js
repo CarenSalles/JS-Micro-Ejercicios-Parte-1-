@@ -7,18 +7,27 @@
 
 let phrase = prompt("Introduce una frase:");
 
-let characternumber = phrase.length; //Devuelve la longitud del string.
+let phraseToUppercase = phrase.toUpperCase(); //Devuelve el string en mayúsculas.
 
-phrase = phrase.toUpperCase(); //Devuelve el string en mayúsculas.
+let amountOfCharacters = phrase.length; //Devuelve la longitud del string.
+
+let vowelsInPhrase = []
 
 
-let i;     
-
-for ( i= 0 ; i <characternumber; i++) {
+for ( let i= 0 ; i < amountOfCharacters; i++) {
   
-   if (phrase.substring (i, 1) === "A" || phrase.substring (i, 1)== "E" || phrase.substring(i, 1) === "I" || phrase.substring(i, 1) === "O" || phrase.substring (i, 1) === "U" ) {
+   if (phraseToUppercase.substring (i, 1) === "A" || phraseToUppercase.substring (i, 1)== "E" || phraseToUppercase.substring(i, 1) === "I" || phraseToUppercase.substring(i, 1) === "O" || phraseToUppercase.substring (i, 1) === "U" ) {
+         //filtrar phraseToUppercase //El método match() devuelve todas las ocurrencias de una expresión regular dentro de una cadena.
+         // devolver el valor del array
+         // .push a vowelsInPhrase
+
+
     //substring() es un método para extraer una subcadena de texto de una cadena más grande, dadas las posiciones inicial y final dentro de la cadena.
     //recupera el caracter i del string.
-    document.write( "Número de Vocales:" + phrase.substring(0, i) + ".");
+   //  console.log( "Número de Vocales:" + phrase.substring(0, i) + ".");
+   console.log('phrase', phrase);
+   console.log('amount', amountOfCharacters);
+   console.log('uppercase', phraseToUppercase);
+
    }
 }

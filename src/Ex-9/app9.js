@@ -3,7 +3,7 @@
 // Identificar el espacio que creamos en index para que JS reconozca.
 // Creamos una función que captura la frase de el input insertado por los usuários.
 // Creamos una función que determina cual son las vocales a atravesando todas las letras de la frase.
-// Imprimir en pantalla las vocales de la frase.
+// Imprimir en pantalla las cuantidades de vocales de la frase.
 
 
 // let phrase = prompt("Introduce la frase:");
